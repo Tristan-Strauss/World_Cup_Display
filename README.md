@@ -166,8 +166,6 @@ sudo apt autoremove -y
 
 Create Virtual Environment
 
-Create Virtual Environment
-
 ```bash
 python3 -m venv venv
 source venv/bin/activate
