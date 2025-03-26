@@ -65,6 +65,7 @@ Install desktop environment
 
 ```bash
 sudo apt install lightdm -y
+sudo apt install raspberrypi-ui-mods -y
 ```
 
 Configure boot to use desktop environment
@@ -72,6 +73,14 @@ Configure boot to use desktop environment
 ```bash
 sudo raspi-config
 # Choose System > Boot > [Choose desktop option (option 2 in my case)]
+# ESC to exit tui
+```
+
+Configure auto login on pi
+
+```bash
+sudo rapsi-config
+# Choose System > Auto Login > [Choose no to console and yes to desktop]
 # ESC to exit tui
 ```
 
