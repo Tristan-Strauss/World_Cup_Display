@@ -98,7 +98,9 @@ class VideoPlayer:
         except ValueError:
             print(f"ERROR: Invalid video name '{name}'")
             return
+        print(f"[DEBUG] Starting video with name: {name}")
         self.play_year(year)
+        print(f"[DEBUG] Finished playing video with name: {name}")
 
     def stop(self):
         with self.lock:
